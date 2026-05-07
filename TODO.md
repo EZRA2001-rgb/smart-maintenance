@@ -1,1 +1,8 @@
-# TODO: SonarCloud ✅\n\n## Serveur (✅)\n- [x] npm start → http://localhost:3000\n\n## SonarCloud\n- [x] Git push déclenché CI\n- [x] Fixed integration.test.js (no listen)\n- [⏳] Tests 19/19 ? Lint ✅\n- [ ] Re-push pour nouveau scan\n- [ ] Dashboard: https://sonarcloud.io/dashboard?id=Ezra12363_smart-maintenance\n\n**Problème probable scan:** Vérifiez GitHub secrets > SONAR_TOKEN existe ?\n
+# TODO
+
+- [ ] Update SonarCloud org configuration to fix 404 (organization key mismatch)
+- [ ] Prefer `sonar-project.properties` for `sonar.organization` in GitHub workflow
+- [ ] Remove inline `-Dsonar.organization=...` from `.github/workflows/sonar.yml`
+- [ ] Ensure `sonar-project.properties` contains the correct existing org key
+- [ ] Trigger CI / run workflow to confirm SonarCloud scan succeeds
+
