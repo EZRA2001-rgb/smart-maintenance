@@ -38,5 +38,5 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=Ezra12363_smart-maintenance
-            -Dsonar.organization=ezra12363
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+
