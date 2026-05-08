@@ -35,4 +35,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Sonar config (override)
+        run: |
+          echo "sonar.organization=${{ secrets.SONAR_ORGANIZATION }}" >> sonar-project.properties
+          echo "sonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}" >> sonar-project.properties
+
        
