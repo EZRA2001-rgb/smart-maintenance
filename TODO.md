@@ -7,7 +7,7 @@
 ## Prochaines étapes
 - [ ] Corriger `sonar-project.properties` selon la configuration SonarCloud fournie
   - [ ] `sonar.projectKey=EZRA2001-rgb_smart-maintenance-quality`
-  - [ ] `sonar.organization=EZRA2001-rgb`
+  - [ ] `sonar.organization=ezra2001-rgb`
   - [ ] `sonar.host.url=https://sonarcloud.io`
 - [ ] Relancer `sonar-scanner`
 
