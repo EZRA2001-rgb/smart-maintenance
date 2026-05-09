@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
 
@@ -33,9 +33,10 @@ jobs:
         run: npm test --if-present
 
       - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@v2
+        uses: sonarsource/sonarcloud-github-action@v3
         with:
-          organization: ezra2001-rgb
-          projectKey: EZRA2001-rgb_smart-maintenance
+          args: >
+            -Dsonar.organization=ezra2001-rgb
+            -Dsonar.projectKey=EZRA2001-rgb_smart-maintenance
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
