@@ -38,5 +38,6 @@ jobs:
           args: >
             -Dsonar.organization=ezra2001-rgb
             -Dsonar.projectKey=EZRA2001-rgb_smart-maintenance
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
