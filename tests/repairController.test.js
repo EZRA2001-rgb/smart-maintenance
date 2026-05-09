@@ -8,7 +8,7 @@ app.post('/api/repair-estimate', calculateEstimate);
 
 describe('Repair Controller - Refactored', () => {
   test('Moteur 3h urgent véhicule 12ans pièces', async () => {
-    const response = await request(app)
+    await request(app)
       .post('/api/repair-estimate')
       .send({
         problemType: 'Moteur',
@@ -19,10 +19,11 @@ describe('Repair Controller - Refactored', () => {
       })
       .expect(200)
       .expect(res => {
-expect(res.body.estimate).toBeCloseTo(630, 0); // 5h*75 + 250*0.85*1.2 = 375 + 255
+        expect(res.body.estimate).toBeCloseTo(630, 0); // 5h*75 + 250*0.85*1.2 = 375 + 255
         expect(res.body.details.message).toContain('Forfait moteur');
       });
   });
+
 
   test('Non-moteur normal', async () => {
     const response = await request(app)
