@@ -1,7 +1,0 @@
-organization=ezra2001-rgb
-projectKey=EZRA2001-rgb_smart-maintenance
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.86952
-dashboardUrl=https://sonarcloud.io/dashboard?id=EZRA2001-rgb_smart-maintenance
-ceTaskId=AZ4L5fM65ntoHWzxGoF5
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZ4L5fM65ntoHWzxGoF5
